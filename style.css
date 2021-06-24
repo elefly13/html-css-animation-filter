@@ -76,10 +76,30 @@
 }
 .ex-10-icon {
     font-size: 60px;
+    animation: ruota 1s normal infinite;
 }
-.ex-11-icon {
+@keyframes ruota {
+    0% {
+        transform: rotate(1turn);
+    }
+
+}
+.ex-11-icon:hover {
     font-size: 60px;
+    animation: ruota2 3s linear;
 }
+@keyframes ruota2 {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -93,6 +113,7 @@
     text-align: center;
     text-decoration: none;
 }
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
